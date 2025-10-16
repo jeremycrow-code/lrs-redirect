@@ -1,0 +1,257 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.hero {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #gold;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #gold;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+    font-style: italic;
+}
+
+/* Announcement */
+.announcement {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.announcement-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.announcement-card h2 {
+    color: #8b0000;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.solstice-date {
+    font-size: 1.5rem;
+    color: #4169e1;
+    font-weight: bold;
+    display: block;
+    margin: 1rem 0;
+}
+
+/* Communities Grid */
+.communities {
+    margin-bottom: 3rem;
+}
+
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.community-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.discord-card .card-icon { color: #5865f2; }
+.nol-card .card-icon { color: #ffd700; }
+
+.community-card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 1rem;
+}
+
+.discord-btn {
+    background: #5865f2;
+    color: white;
+}
+
+.nol-btn {
+    background: #ffd700;
+    color: #333;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.secondary-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 0.5rem;
+    background: #666;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.secondary-btn:hover {
+    background: #555;
+    color: white;
+}
+
+/* Special Offer */
+.special-offer {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.offer-card {
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.offer-card h3 {
+    color: #8b0000;
+    margin-bottom: 0.5rem;
+}
+
+/* Additional Info */
+.additional-info {
+    margin-bottom: 3rem;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.info-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.info-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-card li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.info-card li:before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: #ffd700;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: #ccc;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.contact {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .community-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .announcement-card {
+        padding: 1.5rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .cta-button {
+        max-width: 100%;
+    }
+}
