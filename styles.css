@@ -25,12 +25,12 @@ body {
     text-align: center;
     padding: 2rem 0;
     margin-bottom: 2rem;
-    border-bottom: 3px solid #gold;
+    border-bottom: 3px solid #ffd700;
 }
 
 .hero-content h1 {
     font-size: 2.5rem;
-    color: #gold;
+    color: #ffd700;
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
@@ -39,6 +39,43 @@ body {
     font-size: 1.2rem;
     color: #ccc;
     font-style: italic;
+}
+
+/* LRS Website Link Section */
+.lrs-link {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.lrs-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.lrs-card h3 {
+    color: #8b0000;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.lrs-btn {
+    background: #8b0000;
+    color: white;
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    max-width: 250px;
+}
+
+.lrs-btn:hover {
+    background: #a00000;
 }
 
 /* Announcement */
@@ -214,44 +251,5 @@ body {
     color: #ffd700;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 2rem 0;
-    color: #ccc;
-    border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-.contact {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    
-    .community-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .announcement-card {
-        padding: 1.5rem;
-    }
-    
-    .container {
-        padding: 0 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 1.5rem;
-    }
-    
-    .cta-button {
-        max-width: 100%;
-    }
-}
+/* Contact Section */
+.contact-section {
