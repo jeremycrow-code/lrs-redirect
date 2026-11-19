@@ -3,30 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Official portal of the Luciferian Research Society (LRS). A public, standalone, non-hierarchical network dedicated to esoteric research, public obelisks, and illumination.">
   <title>Luciferian Research Society | LRS Public Portal</title>
+  <meta name="description" content="Official portal of the Luciferian Research Society (LRS). A public, standalone, non-hierarchical network dedicated to esoteric research, public obelisks, and illumination.">
+  <link rel="canonical" href="https://luciferianresearch.org/">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="Luciferian Research Society | LRS Public Portal">
+  <meta property="og:description" content="Official portal of the Luciferian Research Society (LRS), founded in 2008 by Jeremy Crow. A public, non-hierarchical network for esoteric research and regional Obelisks.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luciferianresearch.org/">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org JSON-LD @graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://luciferianresearch.org/#website",
+        "url": "https://luciferianresearch.org/",
+        "name": "Luciferian Research Society | LRS Public Portal",
+        "description": "Public research commons, Discord network gateway, and regional Obelisk directory for the Luciferian Research Society.",
+        "publisher": {
+          "@id": "https://luciferianresearch.org/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://luciferianresearch.org/#organization",
+        "name": "Luciferian Research Society",
+        "alternateName": "LRS",
+        "url": "https://luciferianresearch.org/",
+        "foundingDate": "2008-08",
+        "email": "LuciferianResearch@gmail.com",
+        "founder": {
+          "@id": "https://jeremycrow.com/#person"
+        },
+        "description": "An open, standalone, non-hierarchical public research commons and international community network serving Luciferian and Left Hand Path practitioners.",
+        "sameAs": [
+          "https://www.youtube.com/@LuciferianResearch",
+          "https://discord.gg/GvjsS4C",
+          "https://www.instagram.com/luciferianresearchsociety",
+          "https://jeremycrow.com/",
+          "https://novusordoluciferi.org/",
+          "https://gnosticluciferian.org/",
+          "https://zigguratofenki.org/",
+          "https://unknownphilosopher.org/",
+          "https://newluciferianera.org/",
+          "https://flambeaunoir.org/"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://jeremycrow.com/#person",
+        "name": "Jeremy Crow",
+        "alternateName": [
+          "Jeremy McKenzie-Crowe",
+          "Tau Cerinthus III"
+        ],
+        "url": "https://jeremycrow.com/"
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="dark-mode">
   <button class="mode-toggle" id="modeToggle" aria-label="Toggle light and dark mode">Light / Dark</button>
 
   <header class="global-header">
-<div class="header-banner-container">
+    <div class="header-banner-container">
       <div class="site-text-banner space-esoteric">
         <span class="banner-title">LUCIFERIAN RESEARCH SOCIETY</span>
         <span class="banner-sub">SOVEREIGN COLLABORATIVE HUB</span>
       </div>
     </div>
-    <nav class="matrix-nav">
-      <a href="https://jeremycrow.com">Home</a>
-      <a href="https://jeremycrow.com/learn.html">Learn</a>
+    <nav class="matrix-nav" aria-label="Primary Navigation">
       <a href="/" class="active-node">LRS Portal</a>
-      <a href="https://novusordoluciferi.com" target="_blank" rel="noopener">Private Temple (NOL)</a>
-      <a href="https://flambeaunoir.org">Conference</a>
-      <a href="https://jeremycrow.storenvy.com/" target="_blank" rel="noopener">Shop</a>
+      <a href="https://jeremycrow.com/">Jeremy Crow Hub</a>
+      <a href="https://jeremycrow.com/learn.html">Free Courses</a>
     </nav>
   </header>
 
@@ -40,9 +100,9 @@
     <section class="manifesto-section">
       <h3>Sovereign Manifesto</h3>
       <div class="manifesto-content">
-        <p>The Luciferian Research Society is a standalone, public, non-hierarchical organization. Operating entirely outside conventional boundaries, the LRS serves as a collaborative community hub and a direct public portal to deeper, private esoteric groups, initiatory covens, and specialized traditional study cells.</p>
+        <p>The Luciferian Research Society (founded in 2008 by <a href="https://jeremycrow.com/" style="color: var(--accent-color); text-decoration: none;">Jeremy Crow</a>) is a standalone, public, non-hierarchical organization. Operating entirely outside conventional boundaries, the LRS serves as a collaborative community hub and a direct public portal to deeper, private esoteric groups, initiatory covens, and specialized traditional study cells such as the <a href="https://novusordoluciferi.org/" target="_blank" rel="noopener" style="color: var(--accent-color); text-decoration: none;">Novus Ordo Luciferi (NOL)</a>.</p>
         <blockquote>
-          "A local LRS Obelisk can be opened by anyone with the absolute initiative to organize it. No legacy credentials from institutional hierarchies are required—only structural competence, personal dedication, and the will to construct a local node for raw illumination."
+          "A local LRS Obelisk can be opened by anyone with the absolute initiative to organize it. No legacy credentials from institutional hierarchies are required; only structural competence, personal dedication, and the will to construct a local node for raw illumination."
         </blockquote>
         <p>We approach the Light Bearer archetype through a lens of profound personal alchemy, rigorous historical research, and complete sovereign freedom. The era of blind obedience to dogmatic gatekeepers is over.</p>
       </div>
@@ -111,7 +171,7 @@
         <div class="cta-wrapper">
           <a href="https://discord.gg/GvjsS4C" target="_blank" rel="noopener" class="cta-button discord-gateway-btn">Join Discord Server</a>
         </div>
-        <p class="alt-contact">Administrative Inquiries: <a href="mailto: luciferianresearch@gmail.com">LuciferianResearch@gmail.com</a></p>
+        <p class="alt-contact">Administrative Inquiries: <a href="mailto:LuciferianResearch@gmail.com">LuciferianResearch@gmail.com</a></p>
       </div>
     </section>
   </main>
@@ -128,6 +188,15 @@
     </div>
     <div class="footer-meta">
       <p>Embody the Light Bearer: <a href="https://patreon.com/novusordoluciferi" target="_blank" rel="noopener">Join NOL on Patreon</a></p>
+      <p>
+        <a href="https://jeremycrow.com/">Jeremy Crow</a> &bull;
+        <a href="https://novusordoluciferi.org/" target="_blank" rel="noopener">Novus Ordo Luciferi</a> &bull;
+        <a href="https://gnosticluciferian.org/" target="_blank" rel="noopener">Gnostic Temple</a> &bull;
+        <a href="https://zigguratofenki.org/" target="_blank" rel="noopener">Knights of the Ziggurat</a> &bull;
+        <a href="https://unknownphilosopher.org/" target="_blank" rel="noopener">Unknown Philosopher</a> &bull;
+        <a href="https://newluciferianera.org/" target="_blank" rel="noopener">New Luciferian Era</a> &bull;
+        <a href="https://flambeaunoir.org/" target="_blank" rel="noopener">Flambeau Noir</a>
+      </p>
       <p class="copyright">&copy; Luciferian Research Society 2001-2026. Continuing the path of sovereign enlightenment.</p>
     </div>
   </footer>
